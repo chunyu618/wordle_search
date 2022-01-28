@@ -91,6 +91,18 @@ int main(void){
         }
     }
     
+    printf("Usage: \n");
+    printf("[word pattern]\n");
+    printf("[excluded characters]\n");
+    printf("For example, if we want to find a word with pattern \"app**\", excluding characters 'b', 'y', 'g' and 'n'\n");
+    printf("--------------------\n");
+    printf("$./search\n");
+    printf("app**\n");
+    printf("bygn\n");
+    printf("Possible words:\n[0] appal\n[1] apple\n[2] appro\n");
+    printf("--------------------\n");
+    printf("Note that if you don't want to exclude any character, just leave it empty and type enter\n");
+
     char word[32], exclude[32];
     while(true){
         //scanf("%s", word);
