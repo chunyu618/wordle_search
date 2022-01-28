@@ -106,10 +106,12 @@ int main(void){
     char word[32], exclude[32];
     while(true){
         //scanf("%s", word);
+        printf("Enter word pattern: ");
         fgets(word, 32, stdin);
         if(strcmp(word, "exit") == 0){
             break;
         }
+        printf("Enter excluded characters: ");
         fgets(exclude, 32, stdin);
 
         str = string(word,  strlen(word) - 1); // strip '\n'
