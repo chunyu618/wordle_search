@@ -16,7 +16,7 @@ $ git clone https://github.com/chunyu618/wordle_search.git
 
 #### Step 2
 
-Download **[Mieliestronk's English list](http://www.mieliestronk.com/corncob_lowercase.txt)** and separate $5$ letter words from it.
+Download **[Mieliestronk's English list](http://www.mieliestronk.com/corncob_lowercase.txt)** and separate letter words from it.
 
 ```
 & wget http://www.mieliestronk.com/corncob_lowercase.txt
