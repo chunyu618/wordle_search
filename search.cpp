@@ -6,7 +6,8 @@
 #include<fstream>
 
 using namespace std;
-string filename = "5_letter.txt";
+//string filename = "5_letter.txt";
+string filename = "corncob_lowercase.txt";
 
 class WordDictionary {
 public:
@@ -30,6 +31,9 @@ public:
         TrieNode *currNode = trie;
         for(char c : word){
             c -= 'a';
+            if(c < 0 || c >= 26){
+                break;
+            }
             if(currNode->child[c] == NULL){
                 currNode->child[c] = new TrieNode();
             }
